@@ -1,0 +1,25 @@
+autopickup: true
+
+blocks: #LEVEL TO GET THIS BLOCKS | IT WILL GET RANDOM BLOCK
+  default: #You can't delete this | This is used when there are no for player's level
+    - GRASS
+    - COBBLESTONE
+    - IRON_ORE
+  '0':
+    - DIRT
+    - COAL_ORE
+    - TORCH
+  '1':
+    - GRASS
+    - COBBLESTONE
+    - IRON_ORE
+  '2':
+    - GOLD_ORE
+    - IRON_ORE
+    - COBBLESTONE
+
+luckychest-contents: #item:data:amount | randomly picked | add numbers ordered
+  1:
+    - 'GOLDEN_APPLE:0:1'
+  2:
+    - 'DIAMOND:0:2'

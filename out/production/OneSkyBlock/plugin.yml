@@ -1,0 +1,23 @@
+main: me.proiezrush.oneskyblock.Main
+name: OneSkyBlock
+version: "CUSTOM1.0"
+author: ProIEZRush
+commands:
+  ob:
+    aliases: [oneblock]
+    description: Main plugin command
+  trade:
+    aliases: [trading, tradeos, tradear]
+    description: Trade
+
+permissions:
+  ob.player:
+    default: not op
+    children:
+      ob.trade: true
+      ob.command: true
+  ob.vip:
+    default: not op
+    children:
+      ob.autopickup: true
+      ob.player: true
